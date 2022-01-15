@@ -280,6 +280,7 @@ img {
 }
 
 .modal {
+    padding: 8px 8px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -292,6 +293,34 @@ img {
     transition: transform 250ms var(--cubic);
 
 }
+
+.button-modal {
+    
+    margin-left: auto;
+    display: block;
+
+    border-style: none;
+    background-color: var(--white-txt-col);
+
+    padding: 0;
+
+}
+
+.button-modal::before {
+
+    content: "";
+    display: block;
+    
+
+    width: 30px;
+    height: 30px;
+
+    background-image: url(../images/close.svg);
+    background-size: contain;
+
+
+}
+
 
 /* ПОЧЕМУ СВГ И ДЖПЕГ ПОВЕРХУ МОДАЛКИ ПРИ ПРОКРУТКЕ? */
 
@@ -722,8 +751,8 @@ img {
     padding: 6px 22px;
 
     transition: color 250ms var(--cubic),
-    background-color 250ms var(--cubic),
-    box-shadow 250ms var(--cubic);
+        background-color 250ms var(--cubic),
+        box-shadow 250ms var(--cubic);
 
 }
 
