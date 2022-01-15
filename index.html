@@ -61,12 +61,12 @@
         <!-- Герой -->
         <section class="hero">
             <h1 class="hero-title">Эффективные решения <br>для вашего бизнеса</h1>
-            <button class="button-hero" type="button">Заказать услугу</button>
+            <button data-modal-open class="button-hero" type="button">Заказать услугу</button>
         </section>
 
-        <div class="backdrop">
-            <div class="modal">
-
+        <div data-modal class="backdrop is-hidden">
+            <div  class="modal">
+                <button data-modal-close type="button"> закрыть</button>
             </div>
         </div>
 
@@ -114,14 +114,20 @@
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="whatwedo-list">
-                    <li class="whatwedo-list-item"> <a href="" class="whatwedo-link"><img class="whatwedo-img" src="./images/whatwedo1.jpg" alt="Фото гаджета" width="370"
-                            height="294"> </a></li>
-                    <li class="whatwedo-list-item"> <a href=""class="whatwedo-link"> <img src="./images/whatwedo2.jpg" alt="Фото гаджета" width="370"
-                            height="294"></a></li>
-                    <li class="whatwedo-list-item"> <a href="" class="whatwedo-link"><img src="./images/whatwedo3.jpg" alt="Фото гаджета" width="370"
-                            height="294"></a></li>
+                    <li class="whatwedo-list-item"> <a href="" class="whatwedo-link"><img class="whatwedo-img"
+                                src="./images/whatwedo1.jpg" alt="Фото гаджета" width="370" height="294">
+                            <div class="whatwedo-text">Десктопные приложения</div>
+                        </a></li>
+                    <li class="whatwedo-list-item"> <a href="" class="whatwedo-link"> <img src="./images/whatwedo2.jpg"
+                                alt="Фото гаджета" width="370" height="294">
+                            <div class="whatwedo-text">Мобильные приложения</div>
+                        </a></li>
+                    <li class="whatwedo-list-item"> <a href="" class="whatwedo-link"><img src="./images/whatwedo3.jpg"
+                                alt="Фото гаджета" width="370" height="294">
+                            <div class="whatwedo-text">Дизайнерские решения</div>
+                        </a></li>
                 </ul>
-                <a ></a>
+                <a></a>
             </div>
         </section>
 
@@ -416,7 +422,7 @@
         </div>
     </footer>
 
-    <script src="./modal.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
