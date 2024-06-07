@@ -748,7 +748,7 @@ label{
   border-color: #4D5AE5; 
  
 }
-.form-input:focus >.form-input-icon{
+.form-input:focus + .form-input-icon{
   fill: #4D5AE5; 
 }
 
