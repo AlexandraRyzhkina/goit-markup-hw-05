@@ -614,7 +614,7 @@ gap: 24px;
 /* modal */
 
 .modal-overlay {
-  background-color: rgba(124, 110, 108, 0.391);
+  background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   top: 0;
   left: 0;
@@ -627,7 +627,7 @@ gap: 24px;
 
   opacity: 0;
   pointer-events: none;
-  transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .modal-overlay.is-open {
@@ -657,7 +657,7 @@ gap: 24px;
 }
 
 .button-close {
-
+  display: flex; 
   position: absolute;
   top: 24px;
   right: 24px;
@@ -679,7 +679,7 @@ gap: 24px;
 .button-close:focus {
   background-color: #404bbf;
   border: none;
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .button-close-icon {
