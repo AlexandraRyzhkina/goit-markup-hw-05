@@ -744,9 +744,13 @@ label{
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .form-input:focus > label{
-  outline: #4d5ae5;
-} */
+.form-input:focus {
+  border-color: #4D5AE5; 
+ 
+}
+.form-input:focus >.form-input-icon{
+  fill: #4D5AE5; 
+}
 
 .form-input-icon {
   position: absolute;
@@ -775,6 +779,10 @@ label{
   outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-textarea:focus{
+  border-color: #4D5AE5; 
 }
 
 .form-checkbox-box {
