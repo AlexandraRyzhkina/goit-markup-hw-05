@@ -630,10 +630,10 @@ gap: 24px;
   transition: opacity 250ms ease-in-out;
 }
 
-/* .modal-overlay.is-open {
+.modal-overlay.is-open {
   opacity: 1;
   pointer-events: auto;
-} */
+}
 
 .modal {
   background-color: #fcfcfc;
